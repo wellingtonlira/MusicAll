@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MedalFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_medalha"
+        android:layout_width="170dp"
+        android:layout_height="165dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor="#171717">
+
+        <ImageView
+            android:id="@+id/iv_medalha_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_harmonia" />
+
+        <TextView
+            android:id="@+id/tv_medalha_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="Harmonia"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_medalha_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:text="Informar todos os dados durante o cadastro"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_medalha_dica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Nível máximo atingido"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_medalha_nivel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/rock" />
+
+        <TextView
+            android:id="@+id/tv_medalha_nivel_escrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Rockstar"
+            android:paddingLeft="60dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/lvl_harmonia_rock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/star"
+            android:visibility="visible"/>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

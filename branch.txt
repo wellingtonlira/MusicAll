@@ -1,0 +1,22 @@
+
+Criação de Branch técnica
+		Nome da alteração que vai fazer			
+			    |
+			    V
+	git checkout -b nomedabranch  
+	git commit...
+
+	git checkout master
+
+	git merge branchTecnica
+
+	git push
+
+Após fazer o merge deletar a branch tecnica
+	git branch -d nomedabranch
+
+
+Comando para resetar alterações na branch
+	git reset --hard
+
+--------------------------------------------------
